@@ -4,7 +4,7 @@
 
     $hero = new Hero("Gardan", 1);
 
-    echo ($hero->getName());die;
+    var_dump($hero);die;
 
     $hero->description();
 

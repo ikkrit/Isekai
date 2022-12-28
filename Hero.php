@@ -9,8 +9,8 @@
         
         public function __construct($name,$class)
         {
-            $this->name = $this->setName($name);
-            $this->class = $this->setClass($class);
+            $this->name = $name;
+            $this->class = $class;
             $this->skills = $this->setSkills($class);
             $this->life = $this->setLife($class);
         }
@@ -35,7 +35,18 @@
 
         public function setClass($class)
         {
-                $this->class = $class;
+            switch($class) {
+                case 1:
+                    $this->class = "Necro";
+                case 2:
+                    $this->class = "Paladin";
+                case 3:
+                    $this->class = "Barbare";
+                case 4:
+                    $this->class = "Sorcier";
+                default:
+                    $this->class = "Rien";
+            }
 
                 return $this;
         }
@@ -88,7 +99,7 @@
 
         public function description()
         {
-            echo "Le nom de ton hero est : {$this->name} de la class : {$this->class}\n ta competence heroique est : {$this->skills}\n tu commence avec {$this->life} de point de vies";
+            echo "Le nom de ton hero est : {$this->name} de la class : {$this->class}\n;";
         }
     }
 
