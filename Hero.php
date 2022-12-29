@@ -2,19 +2,15 @@
 
     class Hero
     {
-        public $name;
-        public $class;
-        public $skills;
-        public $life;
-        
-        public function __construct($name,$class)
+        private $name;
+        private $class;
+        private $skills;
+        private $life;
+
+        public function __construct($name)
         {
             $this->name = $name;
-            $this->class = $class;
-            $this->skills = $class;
-            $this->life = $class;
         }
-
 
         public function getName()
         {
@@ -38,12 +34,16 @@
             switch($class) {
                 case 1:
                     $this->class = "Necro";
+                    break;
                 case 2:
                     $this->class = "Paladin";
+                    break;
                 case 3:
                     $this->class = "Barbare";
+                    break;
                 case 4:
                     $this->class = "Sorcier";
+                    break;
                 default:
                     $this->class = "Rien";
             }
@@ -61,12 +61,16 @@
                 switch($class) {
                     case 1:
                         $this->skills = "Contrôle des mort-vivants";
+                        break;
                     case 2:
                         $this->skills = "Epée divine";
+                        break;
                     case 3:
                         $this->skills = "Frappe brutal";
+                        break;
                     case 4:
                         $this->skills = "Tempete de foudre";
+                        break;
                     default:
                         $this->skills = "Rien";
                 }
@@ -84,12 +88,16 @@
             switch($class) {
                 case 1:
                     $this->life = 80;
+                    break;
                 case 2:
                     $this->life = 100;
+                    break;
                 case 3:
                     $this->life = 120;
+                    break;
                 case 4:
                     $this->life = 80;
+                    break;
                 default:
                     $this->life = 0;
             }
@@ -97,10 +105,6 @@
                 return $this;
         }
 
-        public function description()
-        {
-            echo "Le nom de ton hero est : {$this->name} de la class : {$this->class}\n;";
-        }
     }
 
 ?>
