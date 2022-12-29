@@ -105,6 +105,11 @@
                 return $this;
         }
 
+        public function hero_description()
+        {
+            return "salut {$this->name} et {$this->class} et {$this->skills} et {$this->life}";
+        }
+
     }
 
 ?>

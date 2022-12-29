@@ -8,7 +8,7 @@
     $hero->setClass($choice);
     $hero->setSkills($choice);
     $hero->setLife($choice);
-    var_dump($hero);die;
+    echo($hero->hero_description());die;
     $marlo = new Marlo("Marlo");
 
     $marlo->description_marlo();
