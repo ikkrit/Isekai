@@ -11,8 +11,8 @@
         {
             $this->name = $name;
             $this->class = $class;
-            $this->skills = $this->setSkills($class);
-            $this->life = $this->setLife($class);
+            $this->skills = $class;
+            $this->life = $class;
         }
 
 
@@ -91,7 +91,7 @@
                 case 4:
                     $this->life = 80;
                 default:
-                $this->life = 0;
+                    $this->life = 0;
             }
 
                 return $this;
