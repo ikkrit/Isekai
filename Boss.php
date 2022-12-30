@@ -12,6 +12,7 @@
         public function __construct($boss_zone)
         {
                 $this->boss_zone = $boss_zone;
+                $this->boss_name = $this->setBoss_name($boss_zone);
         }
 
 
@@ -34,7 +35,11 @@
 
         public function setBoss_name($boss_name)
         {
-                $this->boss_name = $boss_name;
+                if($boss_name == 1) {
+                        $this->boss_name = "salut";
+                } else {
+                        $this->boss_name = "bye";
+                }
 
                 return $this;
         }

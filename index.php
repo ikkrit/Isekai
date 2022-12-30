@@ -2,6 +2,10 @@
 
     require_once "Hero.php";
     require_once "Marlo.php";
+    require_once "Boss.php";
+
+    $boss = new Boss(1);
+    var_dump($boss);die;
 
     $hero = new Hero("Varan");
     $choice = 10;
