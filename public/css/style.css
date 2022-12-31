@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    text-align: center;
+    min-height: 100vh;
+    background: url("/public/img/back.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    animation-name: back;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes back {
+    0% {
+        background-size: 100% auto;
+    }
+    50% {
+        background-size: 120% auto;
+    }
+    100% {
+        background-size: 100% auto;
+    }
+
+}
+
+h1 {
+    margin: 0;
+    padding: 20px;
+    border-bottom: 1px solid rgba(255,255,255,0.4);
+    color: #EA2;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#grille {
+    margin-top: 50px;
+}
+
+#grille input {
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: transparent;
+    border: 1px solid #AAA;
+    color: #fff;
+    display: inline-block;
+    margin: 4px 2px;
+    transition: all 0.3s ease;
+}
+
+#grille input:hover {
+    transform: scale(1.2);
+    color: #000;
+    background-color: #AAA;
+    transition: all 0.3s ease;
+}
+
+input[type="submit"] {
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: #EA2;
+    border: 1px solid #EA2;
+    color: #000;
+    display: inline-block;
+    margin: 4px 2px;
+    visibility: hidden;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+    color: #fff;
+}
+
+#selection {
+    margin: 20px;
+}
+
+#selection input {
+    width: 60px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #EA2;
+    color: #EA2;
+    display: inline-block;
+    margin: 4px 2px;
+}
