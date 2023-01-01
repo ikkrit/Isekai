@@ -114,3 +114,15 @@ h2 {
     margin: 6px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+#resultat {
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.2);
+    width: 800px;
+    margin: 60px auto;
+    padding: 20px;
+}
+
+#resultat span {
+    color: #EA2;
+}
