@@ -22,6 +22,7 @@
     </div>
 
     <div id="selection"></div>
+    
 		<form name="fo" method="post" action="tirage.php">
 			<input type="hidden" name="selection" />
 			<input type="submit" value="Jouer" name="jouer" />
